@@ -4,6 +4,17 @@ import java.util.*;
 import java.util.ArrayList;
 import java.util.function.Consumer;
 
+
+/**
+ * 要点:
+ * 1. LinkedList底层采用双向非循环链表的数据结构，插入效率高，查询效率低，且没有扩容策略
+ * 2. 可以当作链表，单向队列，双端队列，栈来使用。队首和栈顶均为头部
+ * 3. LinkedList是不带头节点的链表，在队首插入删除需要特别处理
+ * 4. LinkedList是非同步容器，可以通过Collections.synchronizedList(new LinkedList(...))获取同步的LinkedList
+ * 5. LinkedList的迭代器也是fail-fast。
+ * 6. 查找指定位置的元素时进行了优化，如果指定位置在左半边从头往尾查找，否则从尾往头查找、
+ * 7. 删除指定元素是指删除首次出现或者最后出现的位置的元素，不能一次性删除所有相同元素
+ */
 public class LinkedList<E>
         extends AbstractSequentialList<E>
         implements List<E>, Deque<E>, Cloneable, java.io.Serializable {
