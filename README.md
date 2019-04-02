@@ -13,7 +13,7 @@
 |类名|是否完成|
 |:---:|:---:|
 |ArrayList|是|
-|LinkList|否|
+|LinkedList|是|
 |HashTable|否|
 |HashMap|否|
 |TreeMap|否|

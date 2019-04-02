@@ -18,6 +18,7 @@ import sun.misc.SharedSecrets;
  * 6.subList方法并不是创建新数组，而是对原始数组中的一定范围内元素的引用
  * 7.RandomAccess，Cloneable都是标记接口，分别标记该类可以随机访问和允许克隆
  * 8.序列化重新定义了writeObject和readObject方法。
+ * 9.这个类不是线程安全的，可以通过Collections.synchronizedList(new ArrayList(...))获取同步的ArrayList
  */
 public class ArrayList<E> extends AbstractList<E>
         implements List<E>, RandomAccess, Cloneable, java.io.Serializable {

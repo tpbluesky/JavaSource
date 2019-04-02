@@ -10,7 +10,7 @@ import java.util.ListIterator;
 import java.util.function.Consumer;
 
 @Slf4j
-public class ListTest {
+public class ArrayListTest {
 
     /**
      * 两个空容量的列表虽然内部使用的数组是同一个静态常量，但是两个List本身是不同的对象
@@ -58,8 +58,8 @@ public class ListTest {
      */
     @Test
     public void retainTest() {
-        List list1 = new ArrayList(Arrays.asList(1, 2, 3, 4, 5));
-        List list2 = new ArrayList(Arrays.asList(1, 3, 6, 7, 8));
+        List<Integer> list1 = new ArrayList(Arrays.asList(1, 2, 3, 4, 5));
+        List<Integer> list2 = new ArrayList(Arrays.asList(1, 3, 6, 7, 8));
         boolean b = list1.retainAll(list2);
 
         // retain: true, result: [1, 3, null, null, null]
