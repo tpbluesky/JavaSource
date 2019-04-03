@@ -14,7 +14,7 @@
 |:---:|:---:|
 |ArrayList|是|
 |LinkedList|是|
-|HashTable|否|
+|HashTable|是|
 |HashMap|否|
 |TreeMap|否|
 |HashSet|否|
