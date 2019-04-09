@@ -5,6 +5,7 @@
 - 主要针对Java中常用的类进行源码解读。 
 - JDK版本:1.8 
 - 开发工具:IDEA
+- 为了使代码能够编译通过，适当引入依赖的类
 
 **项目组织方式**
 - 每一类的解读会单独存放于单独的包下面，包括一些测试性代码。
@@ -15,8 +16,5 @@
 |ArrayList|是|
 |LinkedList|是|
 |HashTable|是|
-|HashMap|否|
-|TreeMap|否|
-|HashSet|否|
-|TreeSet|否|
+|HashMap|是|
 
